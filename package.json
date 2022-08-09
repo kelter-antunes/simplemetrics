@@ -4,7 +4,7 @@
   "description": "A simple, fast, privacy-focused alternative to Google Analytics.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-tracker": "rollup -c rollup.tracker.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kelter-antunes/simplemetrics/issues"
   },
-  "homepage": "https://github.com/kelter-antunes/simplemetrics#readme"
+  "homepage": "https://github.com/kelter-antunes/simplemetrics#readme",
+  "devDependencies": {
+    "rollup": "^2.77.2"
+  }
 }
