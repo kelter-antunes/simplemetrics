@@ -7,5 +7,8 @@ export default {
     file: 'public/simplemetrics.js',
     format: 'iife',
   },
-  plugins: [buble({ objectAssign: true })],
+  plugins: [
+    buble({ objectAssign: true }),
+    terser({ compress: { evaluate: false } }),
+  ],
 };
